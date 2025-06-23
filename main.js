@@ -9,7 +9,6 @@ const resultContainer = document.getElementById('resultContainer');
 const resultText = document.getElementById('resultText');
 const resultValue = document.getElementById('resultValue');
 
-// Toggle functionality
 toggleSwitch.addEventListener('click', () => {
     isBuyMode = !isBuyMode;
     toggleSwitch.classList.toggle('active');
@@ -25,7 +24,6 @@ toggleSwitch.addEventListener('click', () => {
     calculate();
 });
 
-// Real-time calculation
 amountInput.addEventListener('input', calculate);
 ratioInput.addEventListener('input', calculate);
 
@@ -35,12 +33,10 @@ function parseRatio(ratioStr) {
     try {
         ratioStr = ratioStr.trim();
 
-        // Only allow numbers, spaces, dots, slashes, and basic operators for safety
         if (!/^[\d\s.\/+-]+$/.test(ratioStr)) {
             return null;
         }
 
-        // Use eval for flexible parsing (same as original)
         const price = eval(ratioStr);
         if (typeof price !== "number" || !isFinite(price) || price <= 0) {
             return null;
@@ -70,26 +66,22 @@ function calculate() {
     const amount = parseInt(amountInput.value);
     const ratioStr = ratioInput.value;
 
-    // Hide result if inputs are empty
     if (!amount || !ratioStr) {
         resultContainer.classList.remove('show');
         return;
     }
 
-    // Validate amount
     if (isNaN(amount) || amount <= 0) {
         showError('Currency amount should be a positive integer');
         return;
     }
 
-    // Parse and validate ratio
     const price = parseRatio(ratioStr);
     if (price === null) {
         showError('Error parsing ratio');
         return;
     }
 
-    // Calculate using the exact logic from the original
     const buySell = isBuyMode ? "buy" : "sell";
     const result = calculateMaxTrade(amount, price, buySell);
 
@@ -104,8 +96,8 @@ function showResult(result) {
     resultContainer.classList.remove('error');
     resultContainer.classList.add('show');
 
-    resultText.textContent = 'Input this into the trade:';
-    resultValue.textContent = `${result.aSold}:${result.bReceived}`;
+    resultText.textContent = 'Input this into Faustus (I want : I have)';
+    resultValue.textContent = `${result.aSold} : ${result.bReceived}`;
 }
 
 function showError(message) {
