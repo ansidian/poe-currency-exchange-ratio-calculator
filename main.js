@@ -96,7 +96,7 @@ function showResult(result) {
     resultContainer.classList.remove('error');
     resultContainer.classList.add('show');
 
-    resultText.textContent = 'Input this into Faustus (I want : I have)';
+    resultText.textContent = 'Input this into Faustus (Want : Have)';
     resultValue.textContent = `${result.aSold} : ${result.bReceived}`;
 }
 
