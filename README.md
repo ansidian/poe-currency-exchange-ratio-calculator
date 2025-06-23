@@ -2,7 +2,7 @@
 
 A modern web-based calculator for Path of Exile's Faustus currency exchange that helps you optimize your trading ratios and avoid partial trades.
 
-![Faustus Calculator Screenshot]()
+![Faustus Calculator Screenshot](static/homepage.jpeg)
 
 ## The Problem
 
@@ -29,8 +29,8 @@ This calculator provides an intuitive interface that:
 
 - **Real-time calculations** - Results update as you type
 - **Flexible ratio input** - Supports decimals (1.5), fractions (3/2), and expressions (1+0.5)
-- **Buy/Sell toggle** - Easy switch between buying and selling 
-- **Clean, modern UI** - Responsive design 
+- **Buy/Sell toggle** - Easy switch between buying and selling
+- **Clean, modern UI** - Responsive design
 - **Instant feedback** - Clear error messages and validation
 
 ## How to Use
@@ -53,7 +53,7 @@ This ensures no leftover currency and a complete trade.
 
 **Without the calculator:**
 
-![Partial Incompleted Trade](static/partial-trade.png)
+![Partial Uncompleted Trade](static/partial-trade.png)
 
 **With the calculator:**
 
@@ -62,7 +62,7 @@ This ensures no leftover currency and a complete trade.
 ## ️ Technical Details
 
 The calculator implements the same algorithm used by the original Faustus Calculator, finding the largest tradeable amount that results in whole
-numbers for both currencies. 
+numbers for both currencies.
 
 Built with vanilla HTML, CSS, and JavaScript.
 

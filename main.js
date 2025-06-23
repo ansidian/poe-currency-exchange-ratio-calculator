@@ -8,6 +8,9 @@ const buyLabel = document.getElementById('buyLabel');
 const resultContainer = document.getElementById('resultContainer');
 const resultText = document.getElementById('resultText');
 const resultValue = document.getElementById('resultValue');
+const infoIcon = document.getElementById('infoIcon');
+const modalOverlay = document.getElementById('modalOverlay');
+const closeBtn = document.getElementById('closeBtn');
 
 toggleSwitch.addEventListener('click', () => {
     isBuyMode = !isBuyMode;
@@ -104,4 +107,28 @@ function showError(message) {
     resultContainer.classList.add('error', 'show');
     resultText.textContent = 'Error';
     resultValue.textContent = message;
+}
+
+infoIcon.addEventListener('click', () => {
+    modalOverlay.classList.add('show');
+    document.body.style.overflow = 'hidden';
+});
+
+closeBtn.addEventListener('click', closeModal);
+
+modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+        closeModal();
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+
+function closeModal() {
+    modalOverlay.classList.remove('show');
+    document.body.style.overflow = 'auto';
 }
