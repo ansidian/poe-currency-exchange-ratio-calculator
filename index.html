@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Currency Calculator</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="container">
+	<h1>Currency Trading Calculator</h1>
+
+	<div class="input-group">
+		<label for="amount">Currency Amount</label>
+		<input type="number" id="amount" placeholder="Enter amount you have" min="1" step="1">
+	</div>
+
+	<div class="input-group">
+		<label for="ratio">Market Ratio</label>
+		<input type="text" id="ratio" placeholder="e.g., 1.5 or 3/2 or 13 1/2">
+		<div class="help-text">You can use expressions like "1/2", "3.5", or "1+0.5"</div>
+	</div>
+
+	<div class="toggle-container">
+		<span class="toggle-label active" id="sellLabel">SELL</span>
+		<div class="toggle-switch" id="toggleSwitch">
+			<div class="toggle-slider"></div>
+		</div>
+		<span class="toggle-label" id="buyLabel">BUY</span>
+	</div>
+
+	<div class="result-container" id="resultContainer">
+		<div class="result-text" id="resultText">Result will appear here</div>
+		<div class="result-value" id="resultValue"></div>
+	</div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

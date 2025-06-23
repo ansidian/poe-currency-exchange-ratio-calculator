@@ -1,0 +1,25 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/discord.xml
+/material_theme_project_new.xml
+/misc.xml
+/vcs.xml
+/kotlinc.xml
+/modules.xml
+/poe-currency-exchange-helper.iml
+/inspectionProfiles/Project_Default.xml
+/.idea/discord.xml
+/.idea/kotlinc.xml
+/.idea/material_theme_project_new.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/poe-currency-exchange-helper.iml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
