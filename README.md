@@ -27,10 +27,10 @@ This calculator provides an intuitive interface that:
 
 ## Features
 
-- **Real-time calculations** - Results update as you type, no submit button needed
+- **Real-time calculations** - Results update as you type
 - **Flexible ratio input** - Supports decimals (1.5), fractions (3/2), and expressions (1+0.5)
-- **Buy/Sell toggle** - Easy switch between buying and selling modes
-- **Clean, modern UI** - Responsive design that works on all devices
+- **Buy/Sell toggle** - Easy switch between buying and selling 
+- **Clean, modern UI** - Responsive design 
 - **Instant feedback** - Clear error messages and validation
 
 ## How to Use
@@ -38,7 +38,7 @@ This calculator provides an intuitive interface that:
 1. **Enter your currency amount** - The amount you want to trade
 2. **Input your desired ratio** - The market rate you want to trade at
 3. **Select Buy or Sell** - Use the toggle switch to choose your trade direction
-4. **Copy the result** - Use the calculated `A:B` values in Faustus's interface
+4. **Copy the result** - Use the calculated `A:B` values in-game through Faustus NPC
 
 ### Example
 
@@ -62,13 +62,15 @@ This ensures no leftover currency and a complete trade.
 ## ️ Technical Details
 
 The calculator implements the same algorithm used by the original Faustus Calculator, finding the largest tradeable amount that results in whole
-numbers for both currencies. This ensures compatibility with Path of Exile's trading system requirements.
+numbers for both currencies. 
 
-Built with vanilla HTML, CSS, and JavaScript for maximum compatibility and performance.
+Built with vanilla HTML, CSS, and JavaScript.
 
 ## Credits
 
 - Original C# algorithm by /u/cybert0urist on Reddit
+- Original Javascript logic by /u/Hagigamer on Reddit
+- [Source Reddit Thread](https://www.reddit.com/r/pathofexile/comments/1lhw36y/thank_you_ggg/)
 - Enhanced and modernized for a pleasant UI / UX
 - Inspired by the original [Faustus Calculator](https://github.com/Hagigamer/FaustusCalculator) by /u/Hagigamer
 
